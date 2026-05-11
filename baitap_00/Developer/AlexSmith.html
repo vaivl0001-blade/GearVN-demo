@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Smith - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    color: #272829;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #149ddd;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    background: #040b14;
+    padding: 0 15px;
+    overflow-y: auto;
+}
+
+#main {
+    margin-left: 300px;
+}
+.profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.profile h1 a {
+    color: #fff;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #149ddd;
+}
+
+/* Thanh điều hướng Menu */
+.nav-menu {
+    margin-top: 30px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-bottom: 15px;
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a i {
+    font-size: 20px;
+    padding-right: 8px;
+    color: #6f7180;
+}
+
+.nav-menu a:hover, .nav-menu .active, .nav-menu .active i {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-menu .active i {
+    color: #149ddd;
+}
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background-color: #f5f8fd;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c; 
+}
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url('hero-bg.jpg') top center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+#hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-weight: 400;
+}
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+
+}
+</style>
+<body>
+
+    <header id="header">
+        <div class="profile">
+            <img src="profile-img.jpg" alt="Alex Smith" class="profile-img">
+            <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
+            
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="skype"><i class="fa-brands fa-skype"></i></a>
+                <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <nav id="navbar" class="nav-menu">
+            <ul>
+                <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> <span>About</span></a></li>
+                <li><a href="#resume" class="nav-link"><i class="fa-regular fa-file-lines"></i> <span>Resume</span></a></li>
+                <li><a href="#portfolio" class="nav-link"><i class="fa-solid fa-book-open"></i> <span>Portfolio</span></a></li>
+                <li><a href="#services" class="nav-link"><i class="fa-solid fa-server"></i> <span>Services</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fa-regular fa-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section id="hero">
+            <div class="hero-container">
+                <h1>Alex Smith</h1>
+                <p>I'm <span class="typed">Photographer</span></p>
+            </div>
+        </section>
+
+        <section id="about" class="about section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
+                </div>
+                <div class="row">
+                    <div class="col-img"></div>
+                    <div class="col-content">
+                        <h3>UI/UX Designer & Web Developer.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <ul class="info-list">
+                            <li><strong>Birthday:</strong> 1 May 1995</li>
+                            <li><strong>Website:</strong> www.example.com</li>
+                            <li><strong>Phone:</strong> +123 456 7890</li>
+                            <li><strong>City:</strong> New York, USA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                </div>
+                <div class="skills-content">
+                    <div class="progress-bar">
+                        <span class="skill">HTML <i class="val">100%</i></span>
+                        <div class="progress-wrap"><div class="progress-fill" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">CSS <i class="val">90%</i></span>
+                        <div class="progress-wrap"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                </div>
+                <div class="row">
+                    <div class="col-resume">
+                        <h3 class="resume-title">Summary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Alex Smith</h4>
+                            <p><em>Innovative and deadline-driven Graphic Designer...</em></p>
+                        </div>
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Master of Fine Arts & Graphic Design</h4>
+                            <h5>2015 - 2016</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="portfolio-filters">
+                    <ul>
+                        <li class="active">ALL</li>
+                        <li>APP</li>
+                        <li>PRODUCT</li>
+                        <li>BRANDING</li>
+                        <li>BOOKS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h4 class="title">Lorem Ipsum</h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores...</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="row contact-layout">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4>Address</h4>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="map-placeholder">[Bản đồ Google Maps]</div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <div class="form-group-row">
+                                <input type="text" placeholder="Your Name" required>
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <input type="text" placeholder="Subject" class="full-width" required>
+                            <textarea rows="5" placeholder="Message" class="full-width" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

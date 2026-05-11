@@ -1,0 +1,43 @@
+import React from 'react';
+
+const SubBanners = () => {
+    return (
+        <div className="container my-4">
+            <div className="row g-3">
+                {/* Banner Tự Build PC */}
+                <div className="col-md-6">
+                    <div className="sub-banner banner-blue d-flex align-items-center justify-content-between p-4 rounded shadow-sm">
+                        <div className="banner-content">
+                            <h3 className="text-uppercase fw-bold text-white mb-2">Tự Build PC theo ý bạn</h3>
+                            <p className="price-tag text-warning fs-2 fw-bold mb-3">Giá chỉ từ 3.990.000đ</p>
+                            <div className="badges mb-3">
+                                <span className="badge bg-primary-dark me-2"><i className="fa-solid fa-credit-card"></i> Trả góp 0%</span>
+                                <span className="badge bg-primary-dark"><i className="fa-solid fa-truck"></i> Miễn phí giao hàng</span>
+                            </div>
+                            <a href="#" className="btn btn-warning fw-bold text-uppercase px-4">Xem ngay</a>
+                        </div>
+                        <div className="banner-image">
+                            <img src="tubuild.png" alt="Build PC" className="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+
+                {/* Banner Ghế bàn hạ giá */}
+                <div className="col-md-6">
+                    <div className="sub-banner banner-red d-flex align-items-center justify-content-between p-4 rounded shadow-sm">
+                        <div className="banner-content text-white">
+                            <h3 className="text-uppercase fw-bold mb-2">Ghế bàn hạ giá</h3>
+                            <p className="promo-text fs-4 mb-3">Thả ga lựa chọn<br/>Ưu đãi lên đến <span className="fs-1 fw-bold">40%</span></p>
+                            <a href="#" className="btn btn-light fw-bold text-uppercase px-4">Xem ngay</a>
+                        </div>
+                        <div className="banner-image">
+                            <img src="ghe.png" alt="Ghế Gaming" className="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default SubBanners;
